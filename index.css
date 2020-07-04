@@ -2,4 +2,75 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: black;
   background-color: #ffce2e;
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.section1 {
+  padding-top: 40vh;
+  padding-left: 20vw;
+  text-align: center;
+}
+
+.section1 p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.section1 h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.section2 {
+  padding-top: 20vh;
+  width: 70%;
+}
+
+.section2 h2{
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.section2 p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.section2 a {
+  display: block;
+  padding: 5px;
+  font-size: 1.2rem;
+  padding-left: 0;
+  width: 100px;
+}
+
+.section2 a:hover {
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+@media(max-width: 780px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section1 {
+    padding: 0;
+    padding-top: 5rem;
+  }
+
+  .section2 {
+    padding: 0;
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+  }
 }
